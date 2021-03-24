@@ -1,12 +1,17 @@
 #include<string.h>
 
 //variables
-int lux_value_cfg = 15;
 int lux_value = 0;
 int C = 0, B = 0, L = 0, n_aux = 0;
 char c_aux, M;
 String st;
 bool monitoring = false, standby = false;
+
+//variables for control
+int low_light_value = 200;
+int lux_value_cfg = 15;
+
+
 int resetValue;
 
 //FUNCTION {send LDR JSON to terminal}
@@ -93,7 +98,10 @@ void loop(){
   
   
   if(digitalRead(2) == 0){
-    if(standby){ //Standby here, refers to the previous state, and function wants the requested state
+    //Standby here, refers to the previous state,
+    // and function argument asks 
+    //for the requested state
+    if(standby){ 
       standby = false;
     }
     else{
@@ -108,38 +116,41 @@ void loop(){
   }
   
 
-  /*
-  Serial.print(analogRead(A0)); //1-310
+  
+  Serial.print(analogRead(A0)); //4-580
   Serial.print(":"); //1-310
   Serial.print(analogRead(A1)); //1-310
   Serial.println(" "); //1-310
-  */
+  
   
  lux_value = abs( analogRead(A0) - analogRead(A1));
   
- if(!standby){        
-    if( lux_value < lux_value_cfg){ //change lux_value_accordingly value accordingly
-      digitalWrite(6,LOW); //direita
-      digitalWrite(9,LOW); //esquerda
-      digitalWrite(10,LOW);
-      digitalWrite(11,LOW);
-    } 
+ if(!standby){ 
+   
+  if(analogRead(A0) > low_light_value || analogRead(A1) > low_light_value )   
 
-    else if(analogRead(A0) > analogRead(A1)){
-      digitalWrite(6,LOW);  //direita
-      digitalWrite(9,HIGH); //esquerda
-      digitalWrite(10,HIGH);
-      digitalWrite(11,LOW);
+      if( lux_value < lux_value_cfg){ //change lux_value_accordingly value accordingly
+        digitalWrite(6,LOW); //direita
+        digitalWrite(9,LOW); //esquerda
+        digitalWrite(10,LOW);
+        digitalWrite(11,LOW);
+      } 
+
+      else if(analogRead(A0) > analogRead(A1)){
+        digitalWrite(6,LOW);  //direita
+        digitalWrite(9,HIGH); //esquerda
+        digitalWrite(11,LOW);
+        digitalWrite(10,HIGH);
+      }
+
+      else if (analogRead(A0) < analogRead(A1)){ //andar para a dir
+        digitalWrite(6,HIGH); //direita
+        digitalWrite(9,LOW); //esquerda
+        digitalWrite(11,HIGH);
+        digitalWrite(10,LOW);
+      }
     }
 
-    else if (analogRead(A0) < analogRead(A1)){ //andar para a dir
-      digitalWrite(6,HIGH); //direita
-      digitalWrite(9,LOW); //esquerda
-      digitalWrite(11,HIGH);
-      digitalWrite(10,LOW);
-    }
-  }
-  
   /*
   With a pull-up resistor, the input pin will read a high state 
   when the button is not pressed. In other words, a small amount
