@@ -45,7 +45,7 @@ void standby_toggle(bool standby){
 
   if(standby){
       digitalWrite(12, LOW);      
-      Serial.println("Standy Mode Activated");
+      Serial.println("StandBy Mode Activated");
     }
     else{
       digitalWrite(12, HIGH);
@@ -169,7 +169,12 @@ void loop(){
       digitalWrite(6,LOW); //direita
         digitalWrite(9,LOW); //esquerda
         digitalWrite(10,LOW);
-        digitalWrite(11,LOW);     
+        digitalWrite(11,LOW);
+      if(monitoring && (motion == 'E' || motion == 'D')){
+            motion = 'P';
+            sendMotorState(motion);         
+
+          }
      }
 
 
@@ -181,11 +186,16 @@ void loop(){
          if(standby){
            digitalWrite(10,LOW);
            digitalWrite(11,LOW);
-           delay(150); 
+           delay(100); 
            digitalWrite(10,HIGH);
            digitalWrite(11,HIGH);
-           delay(150);
+           delay(100);
          }
+       if(monitoring && (motion == 'E' || motion == 'D')){
+            motion = 'P';
+            sendMotorState(motion);         
+
+          }
      }
 }
    
@@ -208,4 +218,4 @@ void loop(){
   
  
 
-           
+           s
