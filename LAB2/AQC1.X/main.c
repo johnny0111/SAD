@@ -81,7 +81,7 @@ char receiveUART(){
     return RCREG;
 }
 
-void config_ADC(){
+void setADC(){
 
     ADCON1bits.PCFG3 = 0;
     ADCON1bits.PCFG2 = 0;
@@ -90,20 +90,40 @@ void config_ADC(){
     ADCON1bits.ADFM = 1;
     ADCON0bits.ADCS0 = 0;
     ADCON0bits.ADCS1 = 0;
-    ADCON0bits.CHS2 = 0;
-    ADCON0bits.CHS1 = 0;
-    ADCON0bits.CHS0 = 0;
     ADCON0bits.ADON = 1;
 }
 
-void convert_ADC(){
+
+int convertADC_0(){
     ADCON0bits.GO_nDONE = 1;
+    ADCON0bits.CHS2 = 0;
+    ADCON0bits.CHS1 = 0;
+    ADCON0bits.CHS0 = 0;
     while(ADCON0bits.GO_nDONE == 1)
         ;
+    return (ADRESH << 8)+ADRESL;
 }
 
+int convertADC_1(){
+    ADCON0bits.GO_nDONE = 1;
+    ADCON0bits.CHS2 = 0;
+    ADCON0bits.CHS1 = 0;
+    ADCON0bits.CHS0 = 1;
+    while(ADCON0bits.GO_nDONE == 1)
+        ;
+    return (ADRESH << 8)+ADRESL;
+}
 
 int main (){
-    
+   
+    //UART
+    setTransmitter();
+    setReceiver();
+    setADC();
+    while(1){
+        sendUART(convertADC_0());
+        sendUART(convertADC_1());
+    }
+
     return 0;
 }
