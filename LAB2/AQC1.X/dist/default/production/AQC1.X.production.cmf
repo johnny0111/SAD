@@ -1,0 +1,947 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\joaom\AppData\Local\Temp\xcAsep4.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 C C 3 2
+config CONFIG 4 2007 2007 1 2
+$dist/default/production\AQC1.X.production.o
+cinit CODE 0 F F 12 2
+text1 CODE 0 3E6 3E6 11 2
+text2 CODE 0 CE6 CE6 10 2
+text3 CODE 0 3F7 3F7 5 2
+text4 CODE 0 E9F E9F 46 2
+text5 CODE 0 E59 E59 46 2
+text6 CODE 0 CB2 CB2 C 2
+text7 CODE 0 DA4 DA4 35 2
+text8 CODE 0 CD8 CD8 E 2
+text9 CODE 0 61D 61D 1BA 2
+text10 CODE 0 CCB CCB D 2
+text11 CODE 0 CBE CBE D 2
+text12 CODE 0 32D 32D B9 2
+text13 CODE 0 EE5 EE5 11B 2
+text14 CODE 0 DD9 DD9 3C 2
+text15 CODE 0 E15 E15 44 2
+text16 CODE 0 CA8 CA8 A 2
+text17 CODE 0 D79 D79 2B 2
+text18 CODE 0 D57 D57 22 2
+text19 CODE 0 D29 D29 11 2
+text20 CODE 0 D18 D18 11 2
+text21 CODE 0 D07 D07 11 2
+text22 CODE 0 CF6 CF6 11 2
+text23 CODE 0 7D7 7D7 25 2
+text24 CODE 0 D3A D3A 1D 2
+nvBANK0 BANK0 1 3F 3F 7 1
+maintext CODE 0 21 21 30C 2
+cstackCOMMON COMMON 1 70 70 C 1
+cstackBANK0 BANK0 1 20 20 1F 1
+cstackBANK1 BANK1 1 A0 A0 48 1
+cstackBANK2 BANK2 1 110 110 4E 1
+cstackBANK3 BANK3 1 190 190 5C 1
+intentry CODE 0 4 4 8 2
+bssBANK0 BANK0 1 46 46 4 1
+bssBANK2 BANK2 1 15E 15E 6 1
+stringtext STRCODE 0 400 400 21D 2
+config CONFIG 4 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 4A-6F 1
+RAM E8-EF 1
+RAM 164-16F 1
+RAM 1EC-1EF 1
+BANK0 4A-6F 1
+BANK1 E8-EF 1
+BANK2 164-16F 1
+BANK3 1EC-1EF 1
+CONST 3-3 2
+CONST 3FC-3FF 2
+CONST 7FC-CA7 2
+CONST 1000-1FFF 2
+ENTRY 3-3 2
+ENTRY 3FC-3FF 2
+ENTRY 7FC-CA7 2
+ENTRY 1000-1FFF 2
+IDLOC 2000-2003 2
+STACK 4A-6F 1
+CODE 3-3 2
+CODE 3FC-3FF 2
+CODE 7FC-CA7 2
+CODE 1000-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7C-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 3FC-3FF 2
+STRCODE 7FC-CA7 2
+STRCODE 1000-1FFF 2
+STRING 3-3 2
+STRING 3FC-3FF 2
+STRING 7FC-CA7 2
+STRING 1000-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\AQC1.X.production.o
+F cinit CODE >1050:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+F cinit CODE >1053:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+F cinit CODE >1079:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+10 cinit CODE >1080:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+11 cinit CODE >1081:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+12 cinit CODE >1082:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+13 cinit CODE >1083:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+14 cinit CODE >1084:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+15 cinit CODE >1087:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+16 cinit CODE >1088:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+17 cinit CODE >1089:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+18 cinit CODE >1090:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+19 cinit CODE >1091:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+1A cinit CODE >1092:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+1B cinit CODE >1093:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+1C cinit CODE >1094:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+1D cinit CODE >1100:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+1D cinit CODE >1102:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+1E cinit CODE >1103:C:\Users\joaom\AppData\Local\Temp\xcAsep4.s
+4 intentry CODE >307:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D3A text24 CODE >307:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D3A text24 CODE >308:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D3E text24 CODE >309:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D44 text24 CODE >310:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D45 text24 CODE >312:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D49 text24 CODE >313:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D4F text24 CODE >314:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D50 text24 CODE >316:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+7D7 text23 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+7D7 text23 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+7D9 text23 CODE >45:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+7DD text23 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+7DF text23 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+7E3 text23 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+7E4 text23 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+7E8 text23 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+7EA text23 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+7EB text23 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+7EF text23 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+7F1 text23 CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+7F7 text23 CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+7FB text23 CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+CF6 text22 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\abs.c
+CF6 text22 CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\abs.c
+CFA text22 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\abs.c
+CFF text22 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\abs.c
+D06 text22 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\abs.c
+D07 text21 CODE >138:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D07 text21 CODE >139:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D0A text21 CODE >140:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D0B text21 CODE >141:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D0C text21 CODE >142:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D0D text21 CODE >143:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D0D text21 CODE >144:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D11 text21 CODE >145:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D17 text21 CODE >146:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D18 text20 CODE >148:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D18 text20 CODE >149:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D1B text20 CODE >150:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D1C text20 CODE >151:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D1D text20 CODE >152:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D1E text20 CODE >153:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D1E text20 CODE >154:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D22 text20 CODE >155:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D28 text20 CODE >156:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D29 text19 CODE >158:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D29 text19 CODE >159:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D2C text19 CODE >160:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D2D text19 CODE >161:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D2E text19 CODE >162:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D2F text19 CODE >163:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D2F text19 CODE >164:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D33 text19 CODE >165:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D39 text19 CODE >167:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D57 text18 CODE >275:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D57 text18 CODE >276:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D60 text18 CODE >276:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D69 text18 CODE >276:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D6D text18 CODE >276:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D71 text18 CODE >277:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D76 text18 CODE >278:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D78 text18 CODE >280:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D79 text17 CODE >37:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D79 text17 CODE >38:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D7B text17 CODE >39:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D7E text17 CODE >41:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D80 text17 CODE >41:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D93 text17 CODE >41:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D97 text17 CODE >41:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D9B text17 CODE >41:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D9F text17 CODE >41:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+DA3 text17 CODE >42:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CA8 text16 CODE >176:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CA9 text16 CODE >178:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CA9 text16 CODE >179:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CAF text16 CODE >181:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CB1 text16 CODE >182:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+E15 text15 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E15 text15 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E17 text15 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E1D text15 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E1F text15 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E20 text15 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E21 text15 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E25 text15 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E27 text15 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E2B text15 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E2F text15 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E30 text15 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E34 text15 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E36 text15 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E38 text15 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E3C text15 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E40 text15 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E43 text15 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E46 text15 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E47 text15 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E48 text15 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E4C text15 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E4E text15 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E54 text15 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+E58 text15 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+DD9 text14 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+DD9 text14 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+DE1 text14 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+DE3 text14 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+DE4 text14 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+DE5 text14 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+DE9 text14 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+DEB text14 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+DEF text14 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+DF3 text14 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+DF5 text14 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+DF9 text14 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+DFD text14 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+E00 text14 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+E03 text14 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+E04 text14 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+E08 text14 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+E0A text14 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+E10 text14 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+E14 text14 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+EE5 text13 CODE >505:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+EE5 text13 CODE >550:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+EEB text13 CODE >553:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+EEC text13 CODE >555:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+EF2 text13 CODE >558:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+EFD text13 CODE >558:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F01 text13 CODE >559:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F02 text13 CODE >565:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F03 text13 CODE >661:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F04 text13 CODE >825:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F10 text13 CODE >848:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F15 text13 CODE >848:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F25 text13 CODE >848:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F2A text13 CODE >848:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F2D text13 CODE >848:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F30 text13 CODE >848:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F33 text13 CODE >848:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F36 text13 CODE >1285:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F42 text13 CODE >1287:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F46 text13 CODE >1288:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F4A text13 CODE >1289:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F4D text13 CODE >1289:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F4F text13 CODE >1331:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F51 text13 CODE >1332:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F57 text13 CODE >1332:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F68 text13 CODE >1332:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F6C text13 CODE >1332:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F71 text13 CODE >1333:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F7B text13 CODE >1464:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F81 text13 CODE >1465:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F8C text13 CODE >1465:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F90 text13 CODE >1498:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F94 text13 CODE >1500:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F95 text13 CODE >1515:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+F9F text13 CODE >1515:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+FC9 text13 CODE >1550:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+FD4 text13 CODE >1550:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+FD8 text13 CODE >1500:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+FE1 text13 CODE >553:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+FE6 text13 CODE >553:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+FF9 text13 CODE >1564:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+FFF text13 CODE >1567:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\doprnt.c
+32D text12 CODE >219:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+330 text12 CODE >221:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+332 text12 CODE >223:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+333 text12 CODE >225:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+341 text12 CODE >228:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+34F text12 CODE >231:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+35D text12 CODE >234:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+36B text12 CODE >237:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+379 text12 CODE >240:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+387 text12 CODE >243:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+395 text12 CODE >245:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+39C text12 CODE >245:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3A1 text12 CODE >245:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3A4 text12 CODE >245:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3A7 text12 CODE >245:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3AA text12 CODE >245:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3AD text12 CODE >245:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3B0 text12 CODE >245:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3B3 text12 CODE >245:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3B6 text12 CODE >248:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3C3 text12 CODE >248:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3C7 text12 CODE >249:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3D4 text12 CODE >246:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3DF text12 CODE >251:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3E5 text12 CODE >253:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CBE text11 CODE >115:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CBE text11 CODE >117:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CC1 text11 CODE >118:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CC2 text11 CODE >119:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CC3 text11 CODE >120:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CC4 text11 CODE >121:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CC5 text11 CODE >122:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CC8 text11 CODE >123:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CC9 text11 CODE >124:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CCA text11 CODE >125:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CCB text10 CODE >127:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CCB text10 CODE >128:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CCE text10 CODE >129:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CCF text10 CODE >130:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CD0 text10 CODE >131:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CD1 text10 CODE >132:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CD2 text10 CODE >133:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CD5 text10 CODE >134:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CD6 text10 CODE >135:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CD7 text10 CODE >136:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+61D text9 CODE >318:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+61D text9 CODE >320:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+622 text9 CODE >321:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+631 text9 CODE >322:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+636 text9 CODE >325:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+63E text9 CODE >326:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+63F text9 CODE >328:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+645 text9 CODE >329:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+646 text9 CODE >333:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+65C text9 CODE >333:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+66B text9 CODE >335:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+677 text9 CODE >337:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+680 text9 CODE >337:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+684 text9 CODE >337:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+691 text9 CODE >337:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+695 text9 CODE >337:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+699 text9 CODE >339:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+69B text9 CODE >339:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+69F text9 CODE >339:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+6A3 text9 CODE >341:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+6A4 text9 CODE >342:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+6A5 text9 CODE >343:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+6B7 text9 CODE >344:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+6BB text9 CODE >345:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+6C1 text9 CODE >346:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+6C8 text9 CODE >350:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+6E0 text9 CODE >350:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+6E4 text9 CODE >350:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+6E8 text9 CODE >351:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+6EB text9 CODE >352:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+6EC text9 CODE >354:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+6FE text9 CODE >355:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+702 text9 CODE >356:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+708 text9 CODE >357:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+70F text9 CODE >361:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+727 text9 CODE >361:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+72B text9 CODE >361:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+72F text9 CODE >363:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+732 text9 CODE >364:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+733 text9 CODE >365:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+745 text9 CODE >366:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+749 text9 CODE >367:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+74F text9 CODE >368:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+756 text9 CODE >373:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+756 text9 CODE >374:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+757 text9 CODE >375:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+758 text9 CODE >377:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+76A text9 CODE >378:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+76E text9 CODE >379:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+774 text9 CODE >380:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+77B text9 CODE >382:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+77B text9 CODE >385:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+77C text9 CODE >386:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+77C text9 CODE >387:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+77D text9 CODE >388:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+77E text9 CODE >390:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+784 text9 CODE >393:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+785 text9 CODE >395:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+797 text9 CODE >396:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+79B text9 CODE >397:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+7A1 text9 CODE >398:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+7A7 text9 CODE >401:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+7AF text9 CODE >403:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+7B0 text9 CODE >404:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+7B4 text9 CODE >405:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+7C6 text9 CODE >406:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+7CA text9 CODE >407:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+7D0 text9 CODE >408:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+7D6 text9 CODE >412:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CD8 text8 CODE >297:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CD8 text8 CODE >298:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CDE text8 CODE >299:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CE3 text8 CODE >300:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CE5 text8 CODE >301:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+DA4 text7 CODE >414:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+DA4 text7 CODE >415:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+DA8 text7 CODE >418:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+DBB text7 CODE >421:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+DBC text7 CODE >422:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+DC9 text7 CODE >422:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+DCD text7 CODE >421:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+DD8 text7 CODE >430:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CB2 text6 CODE >185:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CB2 text6 CODE >187:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CB8 text6 CODE >189:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CBC text6 CODE >191:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CBD text6 CODE >192:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+E59 text5 CODE >196:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+E59 text5 CODE >198:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+E5D text5 CODE >199:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+E74 text5 CODE >200:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+E75 text5 CODE >202:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+E82 text5 CODE >202:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+E86 text5 CODE >203:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+E93 text5 CODE >200:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+E9E text5 CODE >206:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+E9F text4 CODE >208:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+E9F text4 CODE >210:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+EA3 text4 CODE >211:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+EBA text4 CODE >212:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+EBB text4 CODE >214:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+EC8 text4 CODE >214:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+ECC text4 CODE >215:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+ED9 text4 CODE >212:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+EE4 text4 CODE >218:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3F7 text3 CODE >303:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3F7 text3 CODE >304:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3FB text3 CODE >305:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CE6 text2 CODE >265:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CE6 text2 CODE >266:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CEE text2 CODE >267:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CF0 text2 CODE >268:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CF1 text2 CODE >270:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+CF5 text2 CODE >273:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3E6 text1 CODE >282:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3E6 text1 CODE >283:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3E9 text1 CODE >284:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3EF text1 CODE >285:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3F3 text1 CODE >286:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3F3 text1 CODE >287:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3F6 text1 CODE >295:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+21 maintext CODE >432:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+21 maintext CODE >434:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+25 maintext CODE >435:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+27 maintext CODE >436:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2B maintext CODE >437:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2D maintext CODE >438:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+31 maintext CODE >439:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+37 maintext CODE >440:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3B maintext CODE >441:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+3F maintext CODE >442:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+43 maintext CODE >444:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+44 maintext CODE >445:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+47 maintext CODE >446:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+48 maintext CODE >447:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+4A maintext CODE >448:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+4B maintext CODE >449:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+4E maintext CODE >450:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+4F maintext CODE >452:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+50 maintext CODE >453:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+51 maintext CODE >454:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+52 maintext CODE >455:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+55 maintext CODE >460:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+5A maintext CODE >461:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+5F maintext CODE >464:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+63 maintext CODE >465:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+64 maintext CODE >469:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+64 maintext CODE >470:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+64 maintext CODE >472:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+6C maintext CODE >474:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+72 maintext CODE >475:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+78 maintext CODE >476:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+78 maintext CODE >478:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+7C maintext CODE >478:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+80 maintext CODE >479:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+92 maintext CODE >480:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+9F maintext CODE >481:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+B0 maintext CODE >481:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+B4 maintext CODE >481:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+B8 maintext CODE >482:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+BC maintext CODE >482:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+C5 maintext CODE >483:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+D2 maintext CODE >492:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+E3 maintext CODE >495:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+F2 maintext CODE >496:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+101 maintext CODE >499:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+102 maintext CODE >501:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+12D maintext CODE >502:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+141 maintext CODE >503:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+157 maintext CODE >504:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+16B maintext CODE >505:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+181 maintext CODE >507:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+195 maintext CODE >507:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+197 maintext CODE >507:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+19E maintext CODE >507:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+1A0 maintext CODE >507:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+1A7 maintext CODE >507:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+1A9 maintext CODE >507:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+1B0 maintext CODE >507:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+1B2 maintext CODE >507:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+1B6 maintext CODE >508:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+1BD maintext CODE >509:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+1D4 maintext CODE >509:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+1DE maintext CODE >509:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+1E3 maintext CODE >511:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+1F7 maintext CODE >511:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+1F9 maintext CODE >511:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+200 maintext CODE >511:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+202 maintext CODE >511:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+209 maintext CODE >511:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+20B maintext CODE >511:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+212 maintext CODE >511:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+214 maintext CODE >511:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+218 maintext CODE >512:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+21F maintext CODE >513:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+236 maintext CODE >513:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+240 maintext CODE >513:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+245 maintext CODE >514:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+264 maintext CODE >515:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+26B maintext CODE >517:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+26D maintext CODE >517:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+272 maintext CODE >517:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+275 maintext CODE >517:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+278 maintext CODE >517:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+27B maintext CODE >517:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+27E maintext CODE >517:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+281 maintext CODE >517:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+284 maintext CODE >517:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+287 maintext CODE >517:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+28A maintext CODE >518:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+28D maintext CODE >519:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+299 maintext CODE >521:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2A1 maintext CODE >522:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2A3 maintext CODE >522:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2A7 maintext CODE >523:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2A9 maintext CODE >524:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2B0 maintext CODE >525:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2B2 maintext CODE >526:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2CD maintext CODE >530:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2D3 maintext CODE >532:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2D3 maintext CODE >534:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2D7 maintext CODE >536:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2DC maintext CODE >538:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2E4 maintext CODE >539:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2E9 maintext CODE >540:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2ED maintext CODE >543:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+2FB maintext CODE >545:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+307 maintext CODE >547:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+312 maintext CODE >548:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+31C maintext CODE >550:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+324 maintext CODE >556:D:\joaom\Documents\Mestrado\2º semestre\SAD\Labs/Lab2/AQC1.X/main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_sendParameters_message 1D3E 0 CODE 0 text4 dist/default/production\AQC1.X.production.o
+___latbits 2 0 ABS 0 - dist/default/production\AQC1.X.production.o
+___lwmod@counter 7B 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+turnRes@s 72 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+__Hspace_0 1000 0 ABS 0 - -
+__Hspace_1 1EC 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+?_heatAlarm 74 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+sendMessage@ldr1 36 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+sendMessage@ldr2 38 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+delay@i 7A 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+delay@n 72 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_checkLeds C3A 0 CODE 0 text9 dist/default/production\AQC1.X.production.o
+_convertADC_heat 1A52 0 CODE 0 text19 dist/default/production\AQC1.X.production.o
+__Lstringtext 0 0 ABS 0 stringtext -
+?_abs 74 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+main@i 156 0 BANK2 1 cstackBANK2 dist/default/production\AQC1.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\joaom\AppData\Local\Temp\xcAsep4.o
+_main 42 0 CODE 0 maintext dist/default/production\AQC1.X.production.o
+abs@a 74 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\AQC1.X.production.o
+start 18 0 CODE 0 init C:\Users\joaom\AppData\Local\Temp\xcAsep4.o
+__size_of_main 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+?___wmul 72 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\AQC1.X.production.o
+receiveUART@c 73 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+__size_of_receiveUART 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+printACK@frase A0 0 BANK1 1 cstackBANK1 dist/default/production\AQC1.X.production.o
+printACK@value 36 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+_standby_toggle 19CC 0 CODE 0 text2 dist/default/production\AQC1.X.production.o
+__size_of_sendMessage 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\joaom\AppData\Local\Temp\xcAsep4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\joaom\AppData\Local\Temp\xcAsep4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\joaom\AppData\Local\Temp\xcAsep4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\joaom\AppData\Local\Temp\xcAsep4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\joaom\AppData\Local\Temp\xcAsep4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\joaom\AppData\Local\Temp\xcAsep4.o
+_turnRes 7CC 0 CODE 0 text1 dist/default/production\AQC1.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\AQC1.X.production.o
+sendParameters_message@c 190 0 BANK3 1 cstackBANK3 dist/default/production\AQC1.X.production.o
+sendParameters_message@i 1EA 0 BANK3 1 cstackBANK3 dist/default/production\AQC1.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+sendMessage@c A0 0 BANK1 1 cstackBANK1 dist/default/production\AQC1.X.production.o
+sendMessage@i E6 0 BANK1 1 cstackBANK1 dist/default/production\AQC1.X.production.o
+sendParameters_message@lux_cfg 38 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+___wmul@multiplicand 74 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+_ADRESH 1E 0 ABS 0 - dist/default/production\AQC1.X.production.o
+_ADRESL 9E 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__end_of___wmul FF8 0 CODE 0 text23 dist/default/production\AQC1.X.production.o
+__size_of_convertADC_heat 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__end_of_standby_toggle 19EC 0 CODE 0 text2 dist/default/production\AQC1.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+___lwmod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+__size_of_isResOn 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__end_of___lwdiv 1CB2 0 CODE 0 text15 dist/default/production\AQC1.X.production.o
+__end_of___lwmod 1C2A 0 CODE 0 text14 dist/default/production\AQC1.X.production.o
+sendInfo@c A0 0 BANK1 1 cstackBANK1 dist/default/production\AQC1.X.production.o
+sendInfo@i DD 0 BANK1 1 cstackBANK1 dist/default/production\AQC1.X.production.o
+checkLeds@lux_value 3B 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+_OPTION_REG 81 0 ABS 0 - dist/default/production\AQC1.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\joaom\AppData\Local\Temp\xcAsep4.o
+___stacklo 0 0 ABS 0 - C:\Users\joaom\AppData\Local\Temp\xcAsep4.o
+_dpowers 824 0 STRCODE 0 stringtext dist/default/production\AQC1.X.production.o
+___lwdiv@quotient 77 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+__size_of_delay 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__end_of_sendParameters_message 1DCA 0 CODE 0 text4 dist/default/production\AQC1.X.production.o
+main@command 15C 0 BANK2 1 cstackBANK2 dist/default/production\AQC1.X.production.o
+___lwmod@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+start_initialization 1E 0 CODE 0 cinit dist/default/production\AQC1.X.production.o
+_TRISAbits 85 0 ABS 0 - dist/default/production\AQC1.X.production.o
+_TRISCbits 87 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\AQC1.X.production.o
+__pcstackBANK2 110 0 BANK2 1 cstackBANK2 dist/default/production\AQC1.X.production.o
+__pcstackBANK3 190 0 BANK3 1 cstackBANK3 dist/default/production\AQC1.X.production.o
+sendUART@data 72 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\joaom\AppData\Local\Temp\xcAsep4.o
+__end_of_setADC 1996 0 CODE 0 text11 dist/default/production\AQC1.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 42 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 824 0 STRCODE 0 stringtext dist/default/production\AQC1.X.production.o
+___lwdiv@counter 79 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__end_of_sprintf 2000 0 CODE 0 text13 dist/default/production\AQC1.X.production.o
+_receiveUART 1964 0 CODE 0 text6 dist/default/production\AQC1.X.production.o
+__end_of_heatAlarm 1AF2 0 CODE 0 text18 dist/default/production\AQC1.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+_interruptServiceRoutine 1A74 0 CODE 0 text24 dist/default/production\AQC1.X.production.o
+__end_of_isResOn 19CC 0 CODE 0 text8 dist/default/production\AQC1.X.production.o
+__size_of_heatAlarm 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 1E 0 CODE 0 cinit -
+__end_of_interruptServiceRoutine 1AAE 0 CODE 0 text24 dist/default/production\AQC1.X.production.o
+__Lstack 0 0 STACK 2 stack -
+_low_light_value 3F 0 BANK0 1 nvBANK0 dist/default/production\AQC1.X.production.o
+_PORTAbits 5 0 ABS 0 - dist/default/production\AQC1.X.production.o
+_PORTBbits 6 0 ABS 0 - dist/default/production\AQC1.X.production.o
+_PORTCbits 7 0 ABS 0 - dist/default/production\AQC1.X.production.o
+_sendMessage 1CB2 0 CODE 0 text5 dist/default/production\AQC1.X.production.o
+_setupTimer 7EE 0 CODE 0 text3 dist/default/production\AQC1.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 18 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 18 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 3F 0 BANK0 1 nvBANK0 dist/default/production\AQC1.X.production.o
+___wmul FAE 0 CODE 0 text23 dist/default/production\AQC1.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__LcstackBANK2 0 0 ABS 0 cstackBANK2 -
+__LcstackBANK3 0 0 ABS 0 cstackBANK3 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_heatAlarm 1AAE 0 CODE 0 text18 dist/default/production\AQC1.X.production.o
+__S0 1000 0 ABS 0 - -
+__S1 1EC 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_abs 19EC 0 CODE 0 text22 dist/default/production\AQC1.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\AQC1.X.production.o
+sprintf@val 33 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+_standbyINT 162 0 BANK2 1 bssBANK2 dist/default/production\AQC1.X.production.o
+__end_of_abs 1A0E 0 CODE 0 text22 dist/default/production\AQC1.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 8 0 CODE 0 intentry -
+__stringtab 800 0 STRCODE 0 stringtext dist/default/production\AQC1.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\joaom\AppData\Local\Temp\xcAsep4.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__size_of_sendInfo 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__size_of_sendUART 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__size_of_turnRes 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__end_of_setupTimer 7F8 0 CODE 0 text3 dist/default/production\AQC1.X.production.o
+_RCSTAbits 18 0 ABS 0 - dist/default/production\AQC1.X.production.o
+sprintf@flag 30 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+sprintf@prec 31 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+_motion 45 0 BANK0 1 nvBANK0 dist/default/production\AQC1.X.production.o
+__ptext10 1996 0 CODE 0 text10 dist/default/production\AQC1.X.production.o
+__ptext11 197C 0 CODE 0 text11 dist/default/production\AQC1.X.production.o
+__ptext12 65A 0 CODE 0 text12 dist/default/production\AQC1.X.production.o
+__ptext13 1DCA 0 CODE 0 text13 dist/default/production\AQC1.X.production.o
+__ptext14 1BB2 0 CODE 0 text14 dist/default/production\AQC1.X.production.o
+__ptext15 1C2A 0 CODE 0 text15 dist/default/production\AQC1.X.production.o
+__ptext16 1950 0 CODE 0 text16 dist/default/production\AQC1.X.production.o
+__ptext17 1AF2 0 CODE 0 text17 dist/default/production\AQC1.X.production.o
+__ptext18 1AAE 0 CODE 0 text18 dist/default/production\AQC1.X.production.o
+__ptext19 1A52 0 CODE 0 text19 dist/default/production\AQC1.X.production.o
+__ptext20 1A30 0 CODE 0 text20 dist/default/production\AQC1.X.production.o
+__ptext21 1A0E 0 CODE 0 text21 dist/default/production\AQC1.X.production.o
+__ptext22 19EC 0 CODE 0 text22 dist/default/production\AQC1.X.production.o
+__ptext23 FAE 0 CODE 0 text23 dist/default/production\AQC1.X.production.o
+__ptext24 1A74 0 CODE 0 text24 dist/default/production\AQC1.X.production.o
+___lwdiv 1C2A 0 CODE 0 text15 dist/default/production\AQC1.X.production.o
+___lwmod 1BB2 0 CODE 0 text14 dist/default/production\AQC1.X.production.o
+__pmaintext 42 0 CODE 0 maintext dist/default/production\AQC1.X.production.o
+__size_of_sendParameters_message 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+_convertADC_0 1A0E 0 CODE 0 text21 dist/default/production\AQC1.X.production.o
+_convertADC_1 1A30 0 CODE 0 text20 dist/default/production\AQC1.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+___wmul@multiplier 72 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+_setADC 197C 0 CODE 0 text11 dist/default/production\AQC1.X.production.o
+___lwdiv@divisor 72 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+main@value 158 0 BANK2 1 cstackBANK2 dist/default/production\AQC1.X.production.o
+__size_of_standby_toggle 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__size_of_printACK 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__end_of_setADCRes 19B0 0 CODE 0 text10 dist/default/production\AQC1.X.production.o
+_lux_value_cfg 41 0 BANK0 1 nvBANK0 dist/default/production\AQC1.X.production.o
+_ADCON0bits 1F 0 ABS 0 - dist/default/production\AQC1.X.production.o
+_ADCON1bits 9F 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__end_of__stringtab 824 0 STRCODE 0 stringtext dist/default/production\AQC1.X.production.o
+__size_of_setADCRes 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+main@buffer 110 0 BANK2 1 cstackBANK2 dist/default/production\AQC1.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+_sendInfo 65A 0 CODE 0 text12 dist/default/production\AQC1.X.production.o
+_sendUART 1950 0 CODE 0 text16 dist/default/production\AQC1.X.production.o
+sendInfo@info DC 0 BANK1 1 cstackBANK1 dist/default/production\AQC1.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__HcstackBANK2 0 0 ABS 0 cstackBANK2 -
+__HcstackBANK3 0 0 ABS 0 cstackBANK3 -
+_PIR1bits C 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__Lend_init 18 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_convertADC_0 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__size_of_convertADC_1 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+end_of_initialization 3A 0 CODE 0 cinit dist/default/production\AQC1.X.production.o
+__end_of_sendInfo 7CC 0 CODE 0 text12 dist/default/production\AQC1.X.production.o
+__end_of_sendUART 1964 0 CODE 0 text16 dist/default/production\AQC1.X.production.o
+__Hintentry 18 0 CODE 0 intentry -
+_setADCRes 1996 0 CODE 0 text10 dist/default/production\AQC1.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+___lwdiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+?___lwdiv 72 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+?___lwmod 20 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__size_of_setADC 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__end_of_turnRes 7EE 0 CODE 0 text1 dist/default/production\AQC1.X.production.o
+__ptext1 7CC 0 CODE 0 text1 dist/default/production\AQC1.X.production.o
+__ptext2 19CC 0 CODE 0 text2 dist/default/production\AQC1.X.production.o
+__ptext3 7EE 0 CODE 0 text3 dist/default/production\AQC1.X.production.o
+__ptext4 1D3E 0 CODE 0 text4 dist/default/production\AQC1.X.production.o
+__ptext5 1CB2 0 CODE 0 text5 dist/default/production\AQC1.X.production.o
+__ptext6 1964 0 CODE 0 text6 dist/default/production\AQC1.X.production.o
+__ptext7 1B48 0 CODE 0 text7 dist/default/production\AQC1.X.production.o
+__ptext8 19B0 0 CODE 0 text8 dist/default/production\AQC1.X.production.o
+__ptext9 C3A 0 CODE 0 text9 dist/default/production\AQC1.X.production.o
+_sprintf 1DCA 0 CODE 0 text13 dist/default/production\AQC1.X.production.o
+__end_of_convertADC_0 1A30 0 CODE 0 text21 dist/default/production\AQC1.X.production.o
+__end_of_convertADC_1 1A52 0 CODE 0 text20 dist/default/production\AQC1.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_isResOn 19B0 0 CODE 0 text8 dist/default/production\AQC1.X.production.o
+__pstringtext 800 0 STRCODE 0 stringtext dist/default/production\AQC1.X.production.o
+_printACK 1B48 0 CODE 0 text7 dist/default/production\AQC1.X.production.o
+sprintf@ap 32 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+sprintf@sp 24 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+_monitoring 43 0 BANK0 1 nvBANK0 dist/default/production\AQC1.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_standby 48 0 BANK0 1 bssBANK0 dist/default/production\AQC1.X.production.o
+__end_of_receiveUART 197C 0 CODE 0 text6 dist/default/production\AQC1.X.production.o
+heatAlarm@max_temp 74 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+__end_of_printACK 1BB2 0 CODE 0 text7 dist/default/production\AQC1.X.production.o
+?_convertADC_0 72 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+?_convertADC_1 72 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+__end_of__initialization 3A 0 CODE 0 cinit dist/default/production\AQC1.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__end_of_sendMessage 1D3E 0 CODE 0 text5 dist/default/production\AQC1.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+_TXSTAbits 98 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__Hend_init 1E 0 CODE 0 end_init -
+sprintf@c 35 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+sprintf@f 26 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+printACK@i E1 0 BANK1 1 cstackBANK1 dist/default/production\AQC1.X.production.o
+__size_of_setupTimer 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__end_of_main 65A 0 CODE 0 maintext dist/default/production\AQC1.X.production.o
+?_convertADC_heat 72 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+__end_of_dpowers 838 0 STRCODE 0 stringtext dist/default/production\AQC1.X.production.o
+__end_of_delay 1B48 0 CODE 0 text17 dist/default/production\AQC1.X.production.o
+?_sprintf 24 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+_RCREG 1A 0 ABS 0 - dist/default/production\AQC1.X.production.o
+_RCSTA 18 0 ABS 0 - dist/default/production\AQC1.X.production.o
+_SPBRG 99 0 ABS 0 - dist/default/production\AQC1.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\AQC1.X.production.o
+_TXREG 19 0 ABS 0 - dist/default/production\AQC1.X.production.o
+_TXSTA 98 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_alarm 46 0 BANK0 1 bssBANK0 dist/default/production\AQC1.X.production.o
+_count 15E 0 BANK2 1 bssBANK2 dist/default/production\AQC1.X.production.o
+interrupt_function 8 0 CODE 0 intentry dist/default/production\AQC1.X.production.o
+_delay 1AF2 0 CODE 0 text17 dist/default/production\AQC1.X.production.o
+__size_of_interruptServiceRoutine 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__end_of_convertADC_heat 1A74 0 CODE 0 text19 dist/default/production\AQC1.X.production.o
+_timer 160 0 BANK2 1 bssBANK2 dist/default/production\AQC1.X.production.o
+?_isResOn 72 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\AQC1.X.production.o
+__size_of_abs 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+__initialization 1E 0 CODE 0 cinit dist/default/production\AQC1.X.production.o
+__pbssBANK0 46 0 BANK0 1 bssBANK0 dist/default/production\AQC1.X.production.o
+__pbssBANK2 15E 0 BANK2 1 bssBANK2 dist/default/production\AQC1.X.production.o
+sendParameters_message@low_light 36 0 BANK0 1 cstackBANK0 dist/default/production\AQC1.X.production.o
+__Hstringtext 0 0 ABS 0 stringtext -
+___wmul@product 76 0 COMMON 1 cstackCOMMON dist/default/production\AQC1.X.production.o
+__end_of_checkLeds FAE 0 CODE 0 text9 dist/default/production\AQC1.X.production.o
+__size_of_checkLeds 0 0 ABS 0 - dist/default/production\AQC1.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text2 0 CE6 19CC 10 2
+text4 0 E9F 1D3E 46 2
+text5 0 E59 1CB2 46 2
+text6 0 CB2 1964 C 2
+text7 0 DA4 1B48 35 2
+text8 0 CD8 19B0 E 2
+text9 0 61D C3A 1DF 2
+text10 0 CCB 1996 D 2
+text11 0 CBE 197C D 2
+text13 0 EE5 1DCA 11B 2
+text14 0 DD9 1BB2 3C 2
+text15 0 E15 1C2A 44 2
+text16 0 CA8 1950 A 2
+text17 0 D79 1AF2 2B 2
+text18 0 D57 1AAE 22 2
+text19 0 D29 1A52 11 2
+text20 0 D18 1A30 11 2
+text21 0 D07 1A0E 11 2
+text22 0 CF6 19EC 11 2
+text24 0 D3A 1A74 1D 2
+cstackCOMMON 1 70 70 C 1
+cstackBANK0 1 20 20 2A 1
+cstackBANK1 1 A0 A0 48 1
+cstackBANK2 1 110 110 54 1
+cstackBANK3 1 190 190 5C 1
+intentry 0 4 8 3F8 2
+reset_vec 0 0 0 3 2
+stringtext 0 400 800 21D 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
